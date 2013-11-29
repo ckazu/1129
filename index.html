@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>1129</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="./javascripts/cheet.js"></script>
+    <script>
+      append = function(name) {
+        $("<img src='./images/" + name + ".png' />").appendTo('body')
+      }
+
+      cheet('n i k u', function () {
+        append('niku');
+      });
+
+      cheet('2 9', function () {
+        append('niku');
+      });
+
+      cheet('1 1 2 9', function () {
+        for(var i = 0; i < 1129; i++) { append('niku'); }
+      });
+
+      cheet('f u g u', function () {
+        $('body').empty()
+        append('fugu');
+      });
+    </script>
+  </head>
+
+  <body>
+  </body>
+</html>
